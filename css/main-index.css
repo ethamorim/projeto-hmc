@@ -1,0 +1,99 @@
+.main-page {
+    color: var(--dourado);
+
+    background-image: linear-gradient(transparent, var(--roxo_escuro_bg) 90%), url(../imgs/alice_in_wonderland.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.main-title {
+    margin: 0;
+    white-space: pre-line;
+
+    font-family: var(--zenkaku);
+    font-size: 2.5em;
+}
+
+.main-title::first-line {
+    font-weight: lighter;
+}
+
+.citacao {
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+.flex-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-margin {
+    margin: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .main-page {
+        height: 85vh;
+    }
+
+    .main-title {
+        font-size: 4em;
+    }
+
+    .citacao {
+        font-size: 2em;
+        padding-bottom: 20px;
+    }
+
+    .flex-button {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .button-margin {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main-page {
+        background-image: none;
+        flex-direction: row;
+
+        justify-content: space-between;
+        align-items: center;
+
+        padding-top: 0;
+    }
+
+    .main-page section {
+        width: 50%;
+    }
+
+    .main-img-bg {
+        width: 45%;
+        height: 80vh;
+
+        background-image: linear-gradient(to right, var(--roxo_escuro_bg), transparent 50%), url(../imgs/alice_in_wonderland.jpg);
+        background-size: 100%;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+
+    .main-title {
+        padding-bottom: 0.2em;
+    }
+
+    .citacao {
+        font-size: 1.3em;
+    }
+}

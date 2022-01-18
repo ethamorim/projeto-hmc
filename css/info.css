@@ -1,0 +1,123 @@
+.info-page-container {
+    background-color: var(--branco_bg);
+}
+
+/* .info-page {
+    background-color: var(--branco_bg);
+} */
+
+.about-us-container h2, .in-page-services-container h2 {
+    margin: 0;
+    padding: 40px 0 10px;
+
+    font-family: var(--zenkaku);
+    font-size: 1.8em;
+    text-align: center;
+
+    color: var(--azul_titulos);
+}
+
+.about-us-container p {
+    margin: 10px 0 0;
+
+    font-weight: lighter;
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+.in-page-services-container h2 {
+    padding: 40px 0 20px;
+}
+
+.in-page-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.in-page-services a {
+    width: 200px;
+    padding: 20px 5px;
+    margin: 5px;
+
+    text-align: center;    
+    font-size: 1.4em;
+    font-weight: lighter;
+    text-decoration: none;
+    color: var(--preto);
+
+    /* border: solid 1px var(--preto); */
+    border-radius: 12px;
+
+    transition-duration: .2s;
+}
+
+.in-page-services a > img {
+    display: block;
+    margin: 20px auto;
+
+    width: 40%;
+}
+
+.in-page-services a:hover {
+    background-color: var(--lilas_botoes);
+    
+    font-weight: bold;
+    color: var(--branco);
+}
+
+.in-page-services a:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.customized-service {
+    font-size: 1.3em;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.in-page-services-button {
+    display: block;
+    margin: 20px auto;
+}
+
+@media screen and (min-width: 768px) {
+    .info-page {
+        width: calc(100vw - 200px);
+        margin: 0 auto;
+    }
+
+    .about-us-container h2, .in-page-services-container h2 {
+        font-size: 2.5em;
+    }
+
+    .about-us-container p, .customized-service {
+        font-size: 2em;
+    }
+
+    .in-page-services a {
+        width: 200px;
+
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .info-page {
+        width: 940px;
+    }
+
+    .about-us-container h2, .in-page-services-container h2 {
+        font-size: 2em;
+    }
+
+    .about-us-container p, .customized-service {
+        font-size: 1.5em;
+        margin: 20px 0;
+    }
+
+    .in-page-services {
+        flex-wrap: nowrap;
+    }
+
+}

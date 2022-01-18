@@ -1,0 +1,119 @@
+header {
+    display: grid;
+    align-items: center;
+
+    grid-template-columns: auto auto 4fr;
+    grid-template-areas:"hmc-logo hmc-title-logo menu"
+                        "links links links";
+
+    overflow: hidden;
+    color: var(--dourado);
+    font-family: var(--zenkaku);
+    border-bottom: solid 1.5px var(--roxo_destaque);
+}
+
+.hmc-logo {
+    grid-area: hmc-logo;
+
+    width: 3rem;
+}
+
+.hmc-title-logo {
+    grid-area: hmc-title-logo;
+
+    font-family: var(--zenkaku);
+    font-size: 1.2em;
+}
+
+.hamburger-menu {
+    grid-area: menu;
+
+    position: absolute;
+    top: 38px;
+    right: 38px;
+}
+
+.hamburger-menu img {
+    width: 1.5rem;
+}
+
+#links {
+    grid-area: links;
+
+    display: none;
+    justify-content: space-evenly;
+
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+#links a {
+    color: var(--dourado);
+    text-decoration: none;
+
+    font-size: 1.2em;
+    padding: 5px 10px;
+
+    transition-duration: .2s;
+}
+
+#links a:hover, #links .active {
+    color: var(--dourado);
+    font-weight: bold;
+    border-top: solid 1px var(--dourado);
+}
+
+@media screen and (min-width: 768px) {
+    .hmc-logo {
+        width: 4rem;
+    }
+
+    .hmc-title-logo {
+        font-size: 1.6em;
+    }
+
+    .hamburger-menu {
+        top: 48px;
+        right: 48px;
+    }
+    
+    .hamburger-menu img {
+        width: 2rem;
+    }
+
+    #links a {
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        grid-template-areas:"hmc-logo hmc-title-logo links links links";
+
+        /* padding-bottom: 0 !important; */
+        border: none;
+    }
+
+    .hmc-logo {
+        width: 4rem;
+    }
+
+    .hmc-title-logo, #links a {
+        font-size: 1.2em;
+    }
+    
+    .hamburger-menu {
+        display: none;
+    }
+
+    #links {
+        display: flex;
+        padding: 0;
+        justify-content: right;
+    }
+
+    #links a {
+        font-size: 1.2em;
+        margin: 0 10px;
+    }
+}

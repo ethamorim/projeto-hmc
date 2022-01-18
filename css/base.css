@@ -1,0 +1,96 @@
+:root {
+    --branco: #ffffff;
+    --preto: #000000;
+
+    --branco_bg: #f0f0f0;
+    --dourado: #bd9d17;
+    --roxo_escuro_bg: #0f021d;
+    --roxo_destaque: #07000e;
+    --lilas_botoes: #640DBD;
+    --azul_titulos: #194B70;
+
+    --zenkaku: 'Zen Kaku Gothic Antique', sans-serif;
+    --opensource: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    font-family: var(--opensource);
+    background-color: var(--roxo_escuro_bg);
+}
+
+.body-padding {
+    padding: 20px;
+}
+
+img {
+    width: 1rem;
+}
+
+.button {
+    width: 100%;
+    max-width: 360px;
+    padding: 15px;
+    box-sizing: border-box;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--branco);
+
+    font-family: var(--zenkaku);
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+
+    border-radius: 26px;
+    background-color: var(--lilas_botoes);
+
+    transition-duration: .2s;
+}
+
+.button:hover {
+    background-color: var(--dourado);
+    color: var(--preto);
+}
+
+input[type=text], textarea {
+    display: block;
+    width: 90%;
+    padding: 10px 5px;
+    margin: 10px 0;
+
+    resize: none;
+    border: none;
+}
+
+@media screen and (max-width: 280px) {
+    .main-button {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    img {
+        width: 1.8rem;
+    }
+
+    .button {
+        width: 355px;
+
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .body-padding {
+        padding: 20px 40px;
+    }
+
+    img {
+        width: 1.2rem;
+    }
+
+    .button {
+        max-width: 300px;
+        font-size: 0.9rem;
+    }
+}

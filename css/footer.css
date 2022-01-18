@@ -1,0 +1,32 @@
+footer {
+    color: var(--dourado);
+    text-align: center;
+}
+
+.hmc-logo-footer {
+    width: 4rem;
+}
+
+footer a {
+    margin: 0 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .hmc-logo-footer {
+        width: 5rem;
+    }
+
+    footer p {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hmc-logo-footer {
+        width: 5rem;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+}

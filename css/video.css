@@ -1,0 +1,72 @@
+.help-videos-container {
+    color: var(--dourado);
+    text-align: center;
+}
+
+.help-videos-container h2 {
+    margin: 0 0 1em;
+    font-family: var(--zenkaku);
+}
+
+.help-videos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    /* 
+    *
+    IMPORTANTE!! PRECISA DEFINIR UM HEIGHT PARA ALTERAR O FLEXBOX
+    -- as definições vão no elemento pai e afetam somente os elementos filhos
+    flex-direction: row || column;  --> altera a direção
+    flex-wrap: wrap; --> desce a linha 
+    
+    *
+    */ 
+}
+
+.video {
+    background-color: yellow;
+    border: 2px;
+
+    width: 100vw;
+    height: calc((100vw/1)/(16/9));
+
+    margin: 10px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .help-videos-container {
+        width: calc(100vw - 200px);
+        margin: 0 auto;
+    }
+
+    .help-videos-container h2 {
+        font-size: 2.5em;
+    }
+
+    .video {
+        width: calc(100vw - 350px);
+        height: calc(((100vw - 350px)/1)/(16/9));
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .help-videos-container h2 {
+        font-size: 2em;
+    }
+
+    .help-videos {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .video {
+        width: 360px;
+        height: calc((360px/1)/(16/9));
+    }
+}

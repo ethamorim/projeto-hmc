@@ -1,0 +1,94 @@
+.main-services-container {
+    background-color: var(--branco_bg);
+}
+
+.primary-services-container {
+    text-align: center;
+}
+
+.primary-services-container h2 {
+    margin: 0;
+    padding: 10px 0 20px;
+
+    font-family: var(--zenkaku);
+    font-size: 1.8em;
+    text-align: center;
+
+    color: var(--azul_titulos);
+}
+
+.services {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services label {
+    width: 200px;
+    padding: 20px 5px;
+    margin: 5px;
+
+    text-align: center;    
+    font-size: 1.4em;
+    font-weight: lighter;
+    text-decoration: none;
+    color: var(--preto);
+
+    /* border: solid 1px var(--preto); */
+    border-radius: 12px;
+
+    transition-duration: .2s;
+}
+
+.services label > img {
+    display: block;
+    margin: 20px auto;
+
+    width: 40%;
+}
+
+.services label:hover, .services [type="radio"]:checked + label {
+    background-color: var(--lilas_botoes);
+    
+    font-weight: bold;
+    color: var(--branco);
+}
+
+.services label:hover > img, .services [type="radio"]:checked + label > img {
+    filter: brightness(0) invert(1);
+}
+
+.primary-services-container h3 {
+    font-family: var(--zenkaku);
+    color: var(--azul_titulos);
+}
+
+#outro {
+    margin: 10px auto 30px;
+}
+
+.forms legend {
+    font-size: 1.5em;
+}
+
+.forms label {
+    display: block;
+    font-size: 1.2em;
+    margin: 20px 0 10px;
+}
+
+.checkboxes {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.checkboxes input {
+    margin: 5px;
+}
+
+.service-button {
+    border: none;
+    margin: 20px 0;
+}
