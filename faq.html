@@ -3,104 +3,89 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>FAQ ─ Projeto HMC</title>
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>FAQ | Projeto HMC</title>
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/main-faq.css">
+        <link rel="stylesheet" href="css/footer.css">
+
+        <link rel="icon" href="imgs/hmc_logo.ico" type="image/x-icon">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&family=Zen+Kaku+Gothic+Antique:wght@300;400&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <header style="
-            background-color: #242424;
-            color: #bd9d17;">
-            
-            <img src="imgs/hmc_logo.png" style="
-                width: 100px;">
-            <h2 id="logo-titulo">HMC</h2>
+        <header class="body-padding">
+            <img class="hmc-logo" src="imgs/hmc_logo.svg">
+            <h2 class="hmc-title-logo" id="logo-titulo">HMC</h2>
 
-            <nav>
-                <ul style="
-                    list-style: none;">
-
-                    <li><a href="index.html" style="
-                            text-decoration: none;
-                            color: #bd9d17;">
-                        Menu</a></li>
-                    <li><a href="index.html#sobre-projeto" style="
-                            text-decoration: none;
-                            color: #bd9d17;">
-                        Sobre</a></li>
-                    <li><a href="faq.html" style="
-                            text-decoration: none;
-                            color: #bd9d17;">
-                        FAQ</a></li>
-                    <li><a href="servicos.html" style="
-                            text-decoration: none;
-                            color: #bd9d17;">
-                        Serviços</a></li>
-                    <li>
-                        <a href="https://facebook.com" target="_blank">
-                            <img src="imgs/facebook_logo.png" alt="Logo do Facebook em amarelo" style="
-                                width: 20px;">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/projetoHMC" target="_blank">
-                            <img src="imgs/twitter_logo.png" alt="Logo do Twitter em amarelo" style="
-                                width: 20px;">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://instagram.com" target="_blank">
-                            <img src="imgs/insta_logo.png" alt="Logo do Instagram em amarelo" style="
-                                width: 20px;">
-                        </a>
-                    </li>
-                </ul>
+            <nav id="links">
+                <a href="index.html">Início</a>
+                <a class="active" href="#">FAQ</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="https://facebook.com" target="_blank">
+                    <img src="imgs/facebook_logo.svg" alt="Logo do Facebook em amarelo">
+                </a>
+                <a href="https://twitter.com/projetoHMC" target="_blank">
+                    <img src="imgs/twitter_logo.svg" alt="Logo do Twitter em amarelo">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="imgs/insta_logo.svg" alt="Logo do Instagram em amarelo">
+                </a>
             </nav>
+
+            <a class="hamburger-menu" href="javascript:void(0);" onclick="toggleMenu()">
+                <img src="imgs/hamburger-menu-icon.svg">
+            </a>
         </header>
 
-        <main>
-            <div style="
-                background-color: #242424;
-                color: #bd9d17;">
-
-                <div style="
-                    display: inline-block;">
-
-                    <img src="imgs/writting_symbol.png">
+        <main class="main-faq-container body-padding">
+            <div class="faq-container">
+                <div class="faq">
+                    <h3>O que vocês fazem?</h3>
+                    <p>Tentamos ajudar escritores no que mais têm dificuldade ou ao que está fora do alcance deles, pois sabemos o quanto ser escritor é difícil, seja por hobbie ou por profissão.</p>
                 </div>
-                <div style="
-                    display: inline-block;
-                    vertical-align: top;">
 
-                    <h1>Ops... &NewLine; Essa página ainda não foi escrita</h1>
-                    <p>Estamos trabalhando para que em breve a página esteja disponível para o público. Volte depois!</p>
+                <div class="faq">
+                    <h3>Quais serviços vocês prestam?</h3>
+                    <p>Nossos principais serviços são no planejamento, betagem, leitura sensível e composição de capa para sua história, seja original ou fanfic.</p>
+                </div>
+
+                <div class="faq">
+                    <h3>Não encontrei o serviço que eu queria, e agora?</h3>
+                    <p>Bom, se você, escritor, quer ajuda em algo específico que não está na nossa lista, você pode fazer um pedido customizado. Mas é bom enfatizar que esse pedido pode não estar sempre ao nosso alcance.</p>
+                </div>
+
+                <div class="faq">
+                    <h3>Os serviços são de graça?</h3>
+                    <p>Não necessariamente. Temos diferentes pessoas na equipe e alguns dos nossos membros podem preferir receber pelo serviço. O que é totalmente válido, pois esses serviços são, além de uma ajuda, uma profissão.</p>
+                </div>
+
+                <div class="faq">
+                    <h3>Quanto custam os serviços?</h3>
+                    <p>Isso é normalmente definido pelo membro que presta o serviço, e pode variar de cada um.</p>
                 </div>
             </div>
-            <br>
         </main>
 
-        <footer style="
-            background-color: #242424;
-            color: #bd9d17;">
+        <footer class="body-padding">
+            <img class="hmc-logo-footer" src="imgs/hmc_logo.svg">
 
-            <img src="imgs/hmc_logo.png" style="
-                width: 150px;">
-
-            <p>Feito por Ytalo E. dos Santos Amorim</p>
-            <ul style="
-                list-style: none;">
-                <li>
-                    <a href="https://github.com/deisantix" target="_blank">
-                        <img src="imgs/github_logo.png" style="
-                            width: 20px;">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com" target="_blank">
-                        <img src="imgs/twitter_logo.png" style="
-                            width: 20px;">
-                    </a>
-                </li>
-            </ul>
+            <p>Feito por Ytalo dos Santos</p>
+            
+            <a href="https://github.com/deisantix" target="_blank">
+                <img src="imgs/github_logo.svg">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="imgs/twitter_logo.svg">
+            </a>
         </footer>
     </body>
+    
+    <script src="code.js"></script>
 </html>

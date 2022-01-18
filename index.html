@@ -3,181 +3,132 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>Página Inicial ─ Projeto HMC</title>
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Página Inicial | Projeto HMC</title>
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/main-index.css">
+        <link rel="stylesheet" href="css/info.css">
+        <link rel="stylesheet" href="css/video.css">
+        <link rel="stylesheet" href="css/footer.css">
+
+        <link rel="icon" href="imgs/hmc_logo.ico" type="image/x-icon">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&family=Zen+Kaku+Gothic+Antique:wght@300;400&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <header style="
-            background-color: #242424;
-            color: #bd9d17;">
-            
-            <img src="imgs/hmc_logo.png" style="
-                width: 100px;">
-            <h2 id="logo-titulo">HMC</h2>
+        <header class="body-padding">
+            <img class="hmc-logo" src="imgs/hmc_logo.svg">
+            <h2 class="hmc-title-logo" id="logo-titulo">HMC</h2>
 
-            <nav>
-                <ul style="
-                    list-style: none;">
-
-                    <li><a href="index.html" style="
-                            text-decoration: none;
-                            color: #bd9d17;">
-                        Menu</a></li>
-                    <li><a href="index.html#sobre-projeto" style="
-                            text-decoration: none;
-                            color: #bd9d17;">
-                        Sobre</a></li>
-                    <li><a href="faq.html" style="
-                            text-decoration: none;
-                            color: #bd9d17;">
-                        FAQ</a></li>
-                    <li><a href="servicos.html" style="
-                            text-decoration: none;
-                            color: #bd9d17;">
-                        Serviços</a></li>
-                    <li>
-                        <a href="https://facebook.com" target="_blank">
-                            <img src="imgs/facebook_logo.png" alt="Logo do Facebook em amarelo" style="
-                                width: 20px;">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/projetoHMC" target="_blank">
-                            <img src="imgs/twitter_logo.png" alt="Logo do Twitter em amarelo" style="
-                                width: 20px;">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://instagram.com" target="_blank">
-                            <img src="imgs/insta_logo.png" alt="Logo do Instagram em amarelo" style="
-                                width: 20px;">
-                        </a>
-                    </li>
-                </ul>
+            <nav id="links">
+                <a class="active" href="#">Início</a>
+                <a href="faq.html">FAQ</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="https://facebook.com" target="_blank">
+                    <img src="imgs/facebook_logo.svg" alt="Logo do Facebook em amarelo">
+                </a>
+                <a href="https://twitter.com/projetoHMC" target="_blank">
+                    <img src="imgs/twitter_logo.svg" alt="Logo do Twitter em amarelo">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="imgs/insta_logo.svg" alt="Logo do Instagram em amarelo">
+                </a>
             </nav>
+
+            <a class="hamburger-menu" href="javascript:void(0);" onclick="toggleMenu()">
+                <img src="imgs/hamburger-menu-icon.svg">
+            </a>
         </header>
 
-        <main style="
-            background-color: #242424;
-            color: #bd9d17;">
+        <main class="main-page body-padding">
+            <section>
+                <h1 class="main-title">Projeto &NewLine; História Mal &NewLine; Contada</h1>
 
-            <div>
-                <h1>Projeto &NewLine; História Mal &NewLine; Contada</h1>
-
-                <p>
-                    <q>Um escritor sem escrever é a mesma coisa que alguém sem alma</q>
+                <p class="citacao">
+                    <q>Um escritor sem escrever é a mesma coisa que um indivíduo sem alma</q>
                 </p>
 
-                <a href="#sobre-projeto" style="
-                    color: #ab86ff;">
-                Sobre a HMC</a>
-                <a href="servicos.html" style="
-                    color: #ab86ff;">
-                Nossos serviços</a>
-            </div><div>
-            </div>
+                <div class="flex-button">
+                    <a class="button button-margin" href="#sobre-projeto">Quem somos nós?</a>
+                    <a class="button" href="servicos.html">Conheça nossos serviços</a>
+                </div>
+            </section>
+            <div class="main-img-bg"></div>
         </main>
 
-        <section style="
-            background-color: #f0f0f0;">
-            <div>
-                <h2 id="sobre-projeto" style="
-                    color:#ab86ff">
-                Sobre o projeto!</h2>
-                <p>Somos uma página no intuito de ajudar outros escritores, principalmente iniciantes, a planejarem e terminarem suas histórias.</p>
-                <p>Nós começamos sendo apenas um grupo de escritores no Whatsapp, compartilhando ideias e ajudando uns aos outros no processo de criação. Então percebemos que muitos escritores (basicamente todos) passam pelas mesmas dificuldades que acabamos enfrentando.</p>
-                <p>Então por que não ajudar outros escritores também? Afinal, escritor ajuda escritor, certo? :)</p>
+        <section class="info-page-container">
+            <div class="info-page body-padding">
+                <div class="about-us-container">
+                    <h2 id="sobre-projeto">Sobre o projeto!</h2>
+                    <p>Somos uma página no intuito de ajudar outros escritores, principalmente iniciantes, a planejarem e terminarem suas histórias.</p>
+                    <p>Nós começamos sendo apenas um grupo de escritores no Whatsapp, compartilhando ideias e ajudando uns aos outros no processo de criação. Então percebemos que muitos escritores (basicamente todos) passam pelas mesmas dificuldades que acabamos enfrentando.</p>
+                    <p>Então por que não ajudar os outros também? Afinal, escritor ajuda escritor, certo? ;)</p>
 
-                <h2 style="
-                    color:#ab86ff">
-                Nosso objetivo</h2>
-                <p>Ficar preso em uma ideia, não saber como prosseguir, ou nem mesmo saber como começar é completamente normal. Não significa que você é um escritor ruim.</p>
-                <p>Nós sabemos como a vida de um escritor pode ser difícil, então nosso objetivo é ajudá-lo em qualquer situação, seja no planejamento de ideias, até a capa da sua história, se quiser.</p>
-            </div>
+                    <h2>Nosso objetivo</h2>
+                    <p>Ficar preso em uma ideia, não saber como prosseguir, ou nem mesmo saber como começar é completamente normal. Não significa que você é um escritor ruim.</p>
+                    <p>Nós sabemos como a vida de um escritor pode ser difícil, então nosso objetivo é ajudá-lo em qualquer situação, seja no planejamento de ideias, até a capa da sua história, se quiser.</p>
+                </div>
 
-            <div>
-                <h2 style="
-                    color:#ab86ff">
-                Em que podemos ajudar?</h2>
+                <div class="in-page-services-container">
+                    <h2>Em que podemos ajudar?</h2>
 
-                <ul style="
-                    list-style: none;">
+                    <div class="in-page-services">
+                        <a href="servicos.html">
+                            <img src="imgs/planning.png">
+                            Planejamento
+                        </a>
+
+                        <a href="servicos.html">
+                            <img src="imgs/reading.png">
+                            Betagem
+                        </a>
+
+                        <a href="servicos.html">
+                            <img src="imgs/thumbs_up.png">
+                            Leitura sensível
+                        </a>
+
+                        <a href="servicos.html">
+                            <img src="imgs/book_cover.png">
+                            Capa
+                        </a>
+                    </div>
                     
-                    <li  onclick="location.href='servicos.html';"  style="cursor:pointer;">
-                        <img src="imgs/planning.png" style="
-                            width:100px">
-                        <p>Planejamento</p>   
-                    </li>
-                    <li onclick="location.href='servicos.html';"  style="cursor:pointer;">
-                        <img src="imgs/reading.png" style="
-                            width:100px">
-                        <p>Betagem</p>
-                    </li>
-                    <li onclick="location.href='servicos.html';"  style="cursor:pointer;">
-                        <img src="imgs/thumbs_up.png" style="
-                            width:100px">
-                        <p>Leitura sensível</p>
-                    </li>
-                    <li onclick="location.href='servicos.html';"  style="cursor:pointer;">
-                        <img src="imgs/book_cover.png" style="
-                            width:100px">
-                        <p>Capa</p>
-                    </li>
-                </ul>
-                
-                <p>Não achou o que queria? Faça um pedido customizado!</p>
-                <a href="servicos.html" style="
-                    color: #ab86ff;">
-                Fazer pedido</a>
+                    <p class="customized-service">Não achou o que queria? Faça um pedido customizado!</p>
+                    <a class="button in-page-services-button" href="servicos.html">Fazer pedido</a>
+                </div>
             </div>
         </section>
 
-        <section style="
-            background-color: #242424;">
+        <section class="help-videos-container body-padding">
+            <h2>Vídeos que podem te ajudar no processo criativo:</h2>
 
-            <h2 style="
-                color: #ab86ff;">
-            Vídeos que podem te ajudar no processo criativo:</h2>
-
-            <div>
-                <ul style="
-                    list-style: none;">
-                    <li>
-                        <iframe src="https://www.youtube.com/embed/dnY8Y74wqK0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </li>
-                    <li>
-                        <iframe src="https://www.youtube.com/embed/qmiWO-sk29c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </li>
-                    <li>
-                        <iframe src="https://www.youtube.com/embed/8b9SZjTzeF8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </li>
-                </ul>
+            <div class="help-videos">
+                <iframe class="video" src="https://www.youtube.com/embed/dnY8Y74wqK0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="video" src="https://www.youtube.com/embed/qmiWO-sk29c" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="video" src="https://www.youtube.com/embed/8b9SZjTzeF8" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
 
-        <footer style="
-            background-color: #242424;
-            color: #bd9d17;">
+        <footer class="body-padding">
+            <img class="hmc-logo-footer" src="imgs/hmc_logo.svg">
 
-            <img src="imgs/hmc_logo.png" style="
-                width: 150px;">
-
-            <p>Feito por Ytalo E. dos Santos Amorim</p>
-            <ul style="
-                list-style: none;">
-                <li>
-                    <a href="https://github.com/deisantix" target="_blank">
-                        <img src="imgs/github_logo.png" style="
-                            width: 20px;">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com" target="_blank">
-                        <img src="imgs/twitter_logo.png" style="
-                            width: 20px;">
-                    </a>
-                </li>
-            </ul>
+            <p>Feito por Ytalo dos Santos</p>
+            
+            <a href="https://github.com/deisantix" target="_blank">
+                <img src="imgs/github_logo.svg">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="imgs/twitter_logo.svg">
+            </a>
         </footer>
     </body>
+
+    <script src="code.js"></script>
 </html>

@@ -3,200 +3,130 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>Serviços ─ Projeto HMC</title>
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Serviços | Projeto HMC</title>
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/main-services.css">
+        <link rel="stylesheet" href="css/footer.css">
+
+        <link rel="icon" href="imgs/hmc_logo.ico" type="image/x-icon">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&family=Zen+Kaku+Gothic+Antique:wght@300;400&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <header style="
-            background-color: #242424;
-            color: #bd9d17;">
-            
-            <img src="imgs/hmc_logo.png" style="
-                width: 100px;">
-            <h2 id="logo-titulo">HMC</h2>
+        <header class="body-padding">
+            <img class="hmc-logo" src="imgs/hmc_logo.svg">
+            <h2 class="hmc-title-logo" id="logo-titulo">HMC</h2>
 
-            <nav>
-                <ul style="
-                    list-style: none;">
-
-                    <li><a href="index.html" style="
-                            text-decoration: none;
-                            color: #bd9d17;">
-                        Menu</a></li>
-                    <li><a href="index.html#sobre-projeto" style="
-                            text-decoration: none;
-                            color: #bd9d17;">
-                        Sobre</a></li>
-                    <li><a href="faq.html" style="
-                            text-decoration: none;
-                            color: #bd9d17;">
-                        FAQ</a></li>
-                    <li><a href="servicos.html" style="
-                            text-decoration: none;
-                            color: #bd9d17;">
-                        Serviços</a></li>
-                    <li>
-                        <a href="https://facebook.com" target="_blank">
-                            <img src="imgs/facebook_logo.png" alt="Logo do Facebook em amarelo" style="
-                                width: 20px;">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/projetoHMC" target="_blank">
-                            <img src="imgs/twitter_logo.png" alt="Logo do Twitter em amarelo" style="
-                                width: 20px;">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://instagram.com" target="_blank">
-                            <img src="imgs/insta_logo.png" alt="Logo do Instagram em amarelo" style="
-                                width: 20px;">
-                        </a>
-                    </li>
-                </ul>
+            <nav id="links">
+                <a href="index.html">Início</a>
+                <a href="faq.html">FAQ</a>
+                <a class="active" href="#">Serviços</a>
+                <a href="https://facebook.com" target="_blank">
+                    <img src="imgs/facebook_logo.svg" alt="Logo do Facebook em amarelo">
+                </a>
+                <a href="https://twitter.com/projetoHMC" target="_blank">
+                    <img src="imgs/twitter_logo.svg" alt="Logo do Twitter em amarelo">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="imgs/insta_logo.svg" alt="Logo do Instagram em amarelo">
+                </a>
             </nav>
+
+            <a class="hamburger-menu" href="javascript:void(0);" onclick="toggleMenu()">
+                <img src="imgs/hamburger-menu-icon.svg">
+            </a>
         </header>
 
-        <main>
+        <main class="main-services-container body-padding">
             <form>
-                <div style="
-                    background-color:#f0f0f0">
-
-                    <h1 style="
-                        color:#ab86ff">
-                    Serviços do HMC</h1>
-
-                    <fieldset style=
-                        "border: none;">
-
-                        <input type="radio" name="services" value="planning" id="planning" checked>
+                <div class="primary-services-container">
+                    <h2>Serviços do HMC</h2>
+                    <div class="services">
+                        <input type="radio" name="services" value="planning" id="planning" checked hidden>
                         <label for="planning">
-                            <img src="imgs/planning.png" style="
-                                width:100px">
-                            <p>Planejamento</p>
+                            <img src="imgs/planning.png">
+                            Planejamento
                         </label>
 
-                        <input type="radio" name="services" value="betting" id="betting">
+                        <input type="radio" name="services" value="betting" id="betting" hidden>
                         <label for="betting">
-                            <img src="imgs/reading.png" style="
-                                width:100px">
-                            <p>Betagem</p>
+                            <img src="imgs/reading.png">
+                            Betagem
                         </label>
 
-                        <input type="radio" name="services" value="critical-reading" id="critical-reading">
+                        <input type="radio" name="services" value="critical-reading" id="critical-reading" hidden>
                         <label for="critical-reading">
-                            <img src="imgs/thumbs_up.png" style="
-                                width:100px">
-                            <p>Leitura sensível</p>
+                            <img src="imgs/thumbs_up.png">
+                            Leitura sensível
                         </label>
 
-                        <input type="radio" name="services" value="cover" id="cover">
+                        <input type="radio" name="services" value="cover" id="cover" hidden>
                         <label for="cover">
-                            <img src="imgs/book_cover.png" style="
-                                width:100px">
-                            <p>Capa</p>
+                            <img src="imgs/book_cover.png">
+                            Capa
                         </label>
 
-                        <input type="radio" name="services" value="other" id="other">
+                        <input type="radio" name="services" value="other" id="other" hidden>
                         <label for="other">
-                            <img src="imgs/other_symbol.png" style="
-                                width:100px">
-                            <p>Outro</p>
+                            <img src="imgs/other_symbol.png">
+                            Outro
                         </label>
-                    </fieldset>
+                    </div>
 
-                    <h3 style="
-                        color:#ab86ff">
-                    Em caso de Outro, ou especificações:</h3>
+                    <h3>Em caso de Outro, ou especificações:</h3>
                     <input id="outro" type="text" name="services" placeholder="Eu gostaria de...">
-
-                    <br>
-                    <br>
                 </div>
 
-                <div style="
-                    background-color:#f0f0f0">
-
-                    <fieldset>
-                        <legend style="
-                            font-size: 24px;
-                            color:#ab86ff">
-                        Preencha os campos abaixo</legend>
-                        <br>
+                <div class="second-services-container">
+                    <fieldset class="forms">
+                        <legend>Preencha os campos abaixo</legend>
 
                         <label for="name">Nome ou apelido:</label>
-                        <input id="name" type="text" name="services" placeholder="Seu nome ou apelido..." required style="
-                            display: block;">
-                        <br>
+                        <input id="name" type="text" name="services" placeholder="Seu nome ou apelido..." required>
 
                         <label for="pronomes">Pronomes:</label>
-                        <input id="pronomes" types="text" name="services" placeholder="ele/dele" required style="
-                            display: block;">
-                        <br>
+                        <input id="pronomes" type="text" name="services" placeholder="ele/dele (ou) o/ele/-o" required>
 
                         <label for="cel-number">Número para Whatsapp:</label>
-                        <input id="cel-number" type="text" name="services" placeholder="(__) ____-____" required style="
-                            display: block;">
-                        <br>
+                        <input id="cel-number" type="text" name="services" placeholder="(__) ____-____" required>
 
                         <label for="user-twitter">User no Twitter:</label>
-                        <input id="user-twitter" type="text" name="services" placeholder="@projetoHMC" required style="
-                            display: block;">
-                        <br>
+                        <input id="user-twitter" type="text" name="services" placeholder="@projetoHMC" required>
 
                         <label for="ideas">Nos conte suas ideias iniciais:</label>
-                        <textarea id="ideas" name="services" rows="5" cols="30" placeholder="Para termos uma ideia do seu projeto..." required style="
-                            display: block;">
-                        </textarea>
-                        <br>
+                        <textarea id="ideas" name="services" rows="5" cols="30" placeholder="Para termos uma ideia do seu projeto..." required></textarea>
 
-                        <fieldset style="
-                            border: none;">
-
-                            <label style="
-                                display: block;">
-                            <input id="enter-whatsapp-group" type="checkbox" name="services" value="enter-whatsapp-group">Gostaria de entrar no grupo do Whatsapp de escritores</label>
-                            <label style="
-                                display: block;">
-                            <input id="dm-freely" type="checkbox" name="services" value="dm-freely" checked>Concorda em receber mensagens privadas livremente nas redes sociais inseridas acima</label>
+                        <fieldset class="checkboxes">
+                            <label><input id="enter-whatsapp-group" type="checkbox" name="services" value="enter-whatsapp-group">Gostaria de entrar no grupo do Whatsapp de escritores</label>
+                            <label><input id="dm-freely" type="checkbox" name="services" value="dm-freely" checked>Concorda em receber mensagens privadas livremente nas redes sociais inseridas acima</label>
                         </fieldset>
 
-                        <input type="submit" name="services" value="Enviar" style="
-                            display: block;
-                            width: 100px;
-                            height: 25px;
-                            background-color: #ab86ff;
-                            color: #FFFFFF;">
+                        <input class="button service-button" type="submit" name="services" value="Enviar">
                     </fieldset>
-                    <br>
-                    <br>
                 </div>
             </form>
         </main>
 
-        <footer style="
-            background-color: #242424;
-            color: #bd9d17;">
+        <footer class="body-padding">
+            <img class="hmc-logo-footer" src="imgs/hmc_logo.svg">
 
-            <img src="imgs/hmc_logo.png" style="
-                width: 150px;">
-
-            <p>Feito por Ytalo E. dos Santos Amorim</p>
-            <ul style="
-                list-style: none;">
-                <li>
-                    <a href="https://github.com/deisantix" target="_blank">
-                        <img src="imgs/github_logo.png" style="
-                            width: 20px;">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com" target="_blank">
-                        <img src="imgs/twitter_logo.png" style="
-                            width: 20px;">
-                    </a>
-                </li>
-            </ul>
+            <p>Feito por Ytalo dos Santos</p>
+            
+            <a href="https://github.com/deisantix" target="_blank">
+                <img src="imgs/github_logo.svg">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="imgs/twitter_logo.svg">
+            </a>
         </footer>
     </body>
+
+    <script src="code.js"></script>
 </html>
