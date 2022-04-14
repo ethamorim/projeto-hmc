@@ -4,9 +4,9 @@
 
     --branco_bg: #f0f0f0;
     --dourado: #bd9d17;
-    --roxo_escuro_bg: #0f021d;
+    --roxo_escuro_bg: #10141f;
     --roxo_destaque: #07000e;
-    --lilas_botoes: #640DBD;
+    --lilas_botoes: #2A7DBD;
     --azul_titulos: #194B70;
 
     --zenkaku: 'Zen Kaku Gothic Antique', sans-serif;
@@ -91,6 +91,13 @@ input[type=text], textarea {
 
     .button {
         max-width: 300px;
-        font-size: 0.9rem;
+        margin: 10px;
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .button {
+        font-size: 0.8rem;
     }
 }

@@ -19,6 +19,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&family=Zen+Kaku+Gothic+Antique:wght@300;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"rel="stylesheet">
     </head>
 
     <body>
@@ -46,17 +47,19 @@
             </a>
         </header>
 
-        <main class="main-page body-padding">
+        <main id="main" class="main-page body-padding">
             <section>
-                <h1 class="main-title">Projeto &NewLine; História Mal &NewLine; Contada</h1>
+                <div>
+                    <h1 class="main-title">Projeto &NewLine; História Mal &NewLine; <span>Contada</span></h1>
 
-                <p class="citacao">
-                    <q>Um escritor sem escrever é a mesma coisa que um indivíduo sem alma</q>
-                </p>
+                    <p class="citacao">
+                        <q>Um escritor sem escrever é a mesma coisa que um indivíduo sem alma</q>
+                    </p>
+                </div>
 
                 <div class="flex-button">
-                    <a class="button button-margin" href="#sobre-projeto">Quem somos nós?</a>
-                    <a class="button" href="servicos.html">Conheça nossos serviços</a>
+                    <a id="sobre-projeto-link" class="button button-margin" href="#sobre-projeto">Quem somos nós?</a>
+                    <a class="button" href="#page-services">Conheça nossos serviços</a>
                 </div>
             </section>
             <div class="main-img-bg"></div>
@@ -75,27 +78,27 @@
                     <p>Nós sabemos como a vida de um escritor pode ser difícil, então nosso objetivo é ajudá-lo em qualquer situação, seja no planejamento de ideias, até a capa da sua história, se quiser.</p>
                 </div>
 
-                <div class="in-page-services-container">
+                <div id="page-services" class="in-page-services-container">
                     <h2>Em que podemos ajudar?</h2>
 
                     <div class="in-page-services">
                         <a href="servicos.html">
-                            <img src="imgs/planning.png">
+                            <img src="imgs/planning.svg">
                             Planejamento
                         </a>
 
                         <a href="servicos.html">
-                            <img src="imgs/reading.png">
+                            <img src="imgs/reading.svg">
                             Betagem
                         </a>
 
                         <a href="servicos.html">
-                            <img src="imgs/thumbs_up.png">
+                            <img src="imgs/critical.svg">
                             Leitura sensível
                         </a>
 
                         <a href="servicos.html">
-                            <img src="imgs/book_cover.png">
+                            <img src="imgs/drawing.svg">
                             Capa
                         </a>
                     </div>
@@ -127,8 +130,15 @@
             <a href="https://twitter.com" target="_blank">
                 <img src="imgs/twitter_logo.svg">
             </a>
+
+            <a href="https://storyset.com/home">Home illustrations by Storyset</a>
+
+            <div id="get-back-up">
+                <i class="material-icons-round">arrow_upward</i>
+            </div>
         </footer>
     </body>
 
-    <script src="code.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/code.js"></script>
 </html>

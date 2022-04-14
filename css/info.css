@@ -36,38 +36,48 @@
 }
 
 .in-page-services a {
+    /* box-sizing: border-box; */
     width: 200px;
+    height: 220px;
     padding: 20px 5px;
     margin: 5px;
+    border-radius: 32px;
 
-    text-align: center;    
+    background: linear-gradient(to right bottom, #c4971c 50%, var(--lilas_botoes) 100%);
+    background-size: 200% 200%;
+    background-position: right bottom;
+    background-color: var(--lilas_botoes);
+
+    color: var(--branco);
     font-size: 1.4em;
     font-weight: lighter;
+    text-align: center;    
     text-decoration: none;
-    color: var(--preto);
 
-    /* border: solid 1px var(--preto); */
-    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition-duration: .4s;
+}
+
+.in-page-services a > img {
+    width: 70%;
+    margin: 20px auto;
+    
+    display: block;
 
     transition-duration: .2s;
 }
 
-.in-page-services a > img {
-    display: block;
-    margin: 20px auto;
-
-    width: 40%;
-}
-
 .in-page-services a:hover {
-    background-color: var(--lilas_botoes);
-    
     font-weight: bold;
-    color: var(--branco);
+    background-color: var(--lilas_botoes);
+    background-position: top left;
 }
 
-.in-page-services a:hover img {
-    filter: brightness(0) invert(1);
+.in-page-services a:hover > img {
+    width: 75%;
 }
 
 .customized-service {
