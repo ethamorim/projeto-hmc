@@ -32,6 +32,13 @@ footer a {
     font-size: 1.5em;
 }
 
+#storyset {
+    margin-top: 10px;
+    color: var(--lilas_botoes);
+    font-size: .8em;
+    display: block;
+}
+
 @media screen and (min-width: 768px) {
     .hmc-logo-footer {
         width: 5rem;
