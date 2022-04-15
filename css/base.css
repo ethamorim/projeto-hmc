@@ -57,12 +57,13 @@ input[type=text], textarea {
     width: 90%;
     padding: 10px 5px;
     margin: 10px 0;
-
+    
     resize: none;
     border: none;
 }
 
 @media screen and (max-width: 280px) {
+
     .main-button {
         font-size: 0.8rem;
     }

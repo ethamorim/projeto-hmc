@@ -1,4 +1,6 @@
 .main-faq-container {
+    min-height: 80vh;
+    overflow-y: visible;
     background-color: var(--branco_bg);
 }
 
@@ -6,21 +8,42 @@
     margin-bottom: 30px;
 }
 
-.faq h3 {
-    font-size: 1.4em;
-    font-family: var(--zenkaku);
-    color: var(--azul_titulos);
-
-    margin: 0;
-    padding: 10px;
-
-    border-bottom: 2px solid var(--roxo_escuro_bg)
+.faq__header {
+    border-bottom: 1px solid var(--preto);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.faq p {
+.faq__header i {
+    font-size: 1em;
+    transition: .5s ease;
+}
+
+.facing-down {
+    transform: rotate(90deg);
+}
+
+.faq__header h3 {
     margin: 0;
     padding: 10px;
+    color: var(--azul_titulos);
+    font-size: 1.2em;
+    font-family: var(--zenkaku);
+}
 
+.ler-mais {
+    overflow: hidden;
+    max-height: 0;
+    border: 1px solid var(--preto);
+    background-color: var(--branco);
+
+    transition: max-height .5s ease-out;
+}
+
+.ler-mais p {
+    margin: 0;
+    padding: 10px;
     font-weight: lighter;
     font-size: 1.2rem;
 }
@@ -31,11 +54,11 @@
         margin: 0 auto;
     }
 
-    .faq h3 {
-        font-size: 1.8em;
+    .faq__header h3 {
+        font-size: 1.5em;
     }
 
-    .faq p {
+    .ler-mais p {
         font-size: 1.6em;
     }
 }
@@ -45,12 +68,7 @@
         width: 940px;
     }
 
-    .faq h3 {
-        padding: 20px;
-    }
-
-    .faq p {
+    .ler-mais p {
         font-size: 1.4em;
-        padding: 20px;
     }
 }
