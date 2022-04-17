@@ -21,9 +21,15 @@
     </head>
 
     <body>
-        <header class="body-padding">
-            <img class="hmc-logo" src="imgs/hmc_logo.svg">
-            <h2 class="hmc-title-logo" id="logo-titulo">HMC</h2>
+        <header>
+            <div class="body-padding header">
+                <img class="hmc-logo" src="imgs/hmc_logo.svg">
+                <h2 class="hmc-title-logo" id="logo-titulo">HMC</h2>
+
+                <a class="hamburger-menu" href="javascript:void(0);" onclick="toggleMenu()">
+                    <img src="imgs/hamburger-menu-icon.svg">
+                </a>
+            </div>
 
             <nav id="links">
                 <a href="index.html">Início</a>
@@ -39,10 +45,6 @@
                     <img src="imgs/insta_logo.svg" alt="Logo do Instagram em amarelo">
                 </a>
             </nav>
-
-            <a class="hamburger-menu" href="javascript:void(0);" onclick="toggleMenu()">
-                <img src="imgs/hamburger-menu-icon.svg">
-            </a>
         </header>
 
         <main id="main" class="main-faq-container body-padding">

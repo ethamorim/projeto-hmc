@@ -21,9 +21,15 @@
     </head>
 
     <body>
-        <header class="body-padding">
-            <img class="hmc-logo" src="imgs/hmc_logo.svg">
-            <h2 class="hmc-title-logo" id="logo-titulo">HMC</h2>
+        <header>
+            <div class="body-padding header">
+                <img class="hmc-logo" src="imgs/hmc_logo.svg">
+                <h2 class="hmc-title-logo" id="logo-titulo">HMC</h2>
+
+                <a class="hamburger-menu" href="javascript:void(0);" onclick="toggleMenu()">
+                    <img src="imgs/hamburger-menu-icon.svg">
+                </a>
+            </div>
 
             <nav id="links">
                 <a href="index.html">Início</a>
@@ -39,50 +45,48 @@
                     <img src="imgs/insta_logo.svg" alt="Logo do Instagram em amarelo">
                 </a>
             </nav>
-
-            <a class="hamburger-menu" href="javascript:void(0);" onclick="toggleMenu()">
-                <img src="imgs/hamburger-menu-icon.svg">
-            </a>
         </header>
 
         <main id="main" class="main-services-container body-padding">
             <form>
-                <div class="primary-services-container">
+                <div id="services" class="primary-services-container">
                     <h2>Serviços do HMC</h2>
                     <div class="services">
                         <input type="radio" name="services" value="planning" id="planning" checked hidden>
                         <label for="planning">
-                            <img src="imgs/planning.png">
+                            <img src="imgs/planning.svg">
                             Planejamento
                         </label>
 
                         <input type="radio" name="services" value="betting" id="betting" hidden>
                         <label for="betting">
-                            <img src="imgs/reading.png">
+                            <img src="imgs/reading.svg">
                             Betagem
                         </label>
 
                         <input type="radio" name="services" value="critical-reading" id="critical-reading" hidden>
                         <label for="critical-reading">
-                            <img src="imgs/thumbs_up.png">
+                            <img src="imgs/critical.svg">
                             Leitura sensível
                         </label>
 
                         <input type="radio" name="services" value="cover" id="cover" hidden>
                         <label for="cover">
-                            <img src="imgs/book_cover.png">
+                            <img src="imgs/drawing.svg">
                             Capa
                         </label>
 
                         <input type="radio" name="services" value="other" id="other" hidden>
                         <label for="other">
-                            <img src="imgs/other_symbol.png">
+                            <img src="imgs/question.svg">
                             Outro
                         </label>
                     </div>
 
-                    <h3>Em caso de Outro, ou especificações:</h3>
-                    <input id="outro" type="text" name="services" placeholder="Eu gostaria de...">
+                    <div id="other-input">
+                        <h3>Especifique: </h3>
+                        <input id="outro" type="text" name="services" placeholder="Eu gostaria de...">
+                    </div>
                 </div>
 
                 <div class="second-services-container">
@@ -133,4 +137,5 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/code.js"></script>
+    <script src="js/services.js"></script>
 </html>

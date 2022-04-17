@@ -23,9 +23,15 @@
     </head>
 
     <body>
-        <header class="body-padding">
-            <img class="hmc-logo" src="imgs/hmc_logo.svg">
-            <h2 class="hmc-title-logo" id="logo-titulo">HMC</h2>
+        <header>
+            <div class="body-padding header">
+                <img class="hmc-logo" src="imgs/hmc_logo.svg">
+                <h2 class="hmc-title-logo" id="logo-titulo">HMC</h2>
+
+                <a class="hamburger-menu" href="javascript:void(0);" onclick="toggleMenu()">
+                    <img src="imgs/hamburger-menu-icon.svg">
+                </a>
+            </div>
 
             <nav id="links">
                 <a class="active" href="#">Início</a>
@@ -41,10 +47,6 @@
                     <img src="imgs/insta_logo.svg" alt="Logo do Instagram em amarelo">
                 </a>
             </nav>
-
-            <a class="hamburger-menu" href="javascript:void(0);" onclick="toggleMenu()">
-                <img src="imgs/hamburger-menu-icon.svg">
-            </a>
         </header>
 
         <main id="main" class="main-page body-padding">
@@ -82,29 +84,29 @@
                     <h2>Em que podemos ajudar?</h2>
 
                     <div class="in-page-services">
-                        <a href="servicos.html">
+                        <a id="planning" href="#">
                             <img src="imgs/planning.svg">
                             Planejamento
                         </a>
 
-                        <a href="servicos.html">
+                        <a id="betting" href="#">
                             <img src="imgs/reading.svg">
                             Betagem
                         </a>
 
-                        <a href="servicos.html">
+                        <a id="critical-reading" href="#">
                             <img src="imgs/critical.svg">
                             Leitura sensível
                         </a>
 
-                        <a href="servicos.html">
+                        <a id="cover" href="#">
                             <img src="imgs/drawing.svg">
                             Capa
                         </a>
                     </div>
                     
                     <p class="customized-service">Não achou o que queria? Faça um pedido customizado!</p>
-                    <a class="button in-page-services-button" href="servicos.html">Fazer pedido</a>
+                    <a id="other" class="button in-page-services-button" href="#">Fazer pedido</a>
                 </div>
             </div>
         </section>
@@ -137,4 +139,5 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/code.js"></script>
+    <script src="js/index.js"></script>
 </html>

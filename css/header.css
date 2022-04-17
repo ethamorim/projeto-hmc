@@ -1,10 +1,7 @@
-header {
-    display: grid;
+.header {
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
-
-    grid-template-columns: auto auto 4fr;
-    grid-template-areas:"hmc-logo hmc-title-logo menu"
-                        "links links links";
 
     overflow: hidden;
     color: var(--dourado);
@@ -13,21 +10,15 @@ header {
 }
 
 .hmc-logo {
-    grid-area: hmc-logo;
-
     width: 3rem;
 }
 
 .hmc-title-logo {
-    grid-area: hmc-title-logo;
-
     font-family: var(--zenkaku);
     font-size: 1.2em;
 }
 
 .hamburger-menu {
-    grid-area: menu;
-
     position: absolute;
     top: 38px;
     right: 38px;
@@ -38,13 +29,11 @@ header {
 }
 
 #links {
-    grid-area: links;
-
     display: none;
     justify-content: space-evenly;
+    align-items: center;
 
-    padding-top: 30px;
-    padding-bottom: 5px;
+    transition: max-height .5s ease-out;
 }
 
 #links a {
@@ -88,9 +77,12 @@ header {
 
 @media screen and (min-width: 1024px) {
     header {
-        grid-template-areas:"hmc-logo hmc-title-logo links links links";
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-        /* padding-bottom: 0 !important; */
+    .header {
         border: none;
     }
 

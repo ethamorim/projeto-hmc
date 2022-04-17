@@ -26,37 +26,44 @@
 
 .services label {
     width: 200px;
+    height: 220px;
     padding: 20px 5px;
     margin: 5px;
+    border-radius: 32px;
 
-    text-align: center;    
+    background: linear-gradient(to right bottom, #c4971c 50%, var(--lilas_botoes) 100%);
+    background-size: 200% 200%;
+    background-position: right bottom;
+    background-color: var(--lilas_botoes);
+
+    color: var(--branco);
     font-size: 1.4em;
     font-weight: lighter;
+    text-align: center;    
     text-decoration: none;
-    color: var(--preto);
 
-    /* border: solid 1px var(--preto); */
-    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-    transition-duration: .2s;
+    transition-duration: .4s;
 }
 
 .services label > img {
-    display: block;
+    width: 70%;
     margin: 20px auto;
-
-    width: 40%;
+    display: block;
+    transition-duration: .2s;
 }
 
 .services label:hover, .services [type="radio"]:checked + label {
     background-color: var(--lilas_botoes);
-    
+    background-position: top left;
     font-weight: bold;
-    color: var(--branco);
 }
 
 .services label:hover > img, .services [type="radio"]:checked + label > img {
-    filter: brightness(0) invert(1);
+    width: 75%;
 }
 
 .primary-services-container h3 {
@@ -64,9 +71,18 @@
     color: var(--azul_titulos);
 }
 
+#other-input {
+    display: none;
+}
+
 #outro {
     margin: 10px auto 30px;
 }
+
+.second-services-container {
+    margin-top: 15px;
+}
+
 
 .forms legend {
     font-size: 1.5em;

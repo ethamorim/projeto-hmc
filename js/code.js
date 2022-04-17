@@ -1,13 +1,12 @@
 "use strict";
 
 function toggleMenu() {
-    var x = document.getElementById("links");
-
-    if (x.style.display === "flex") {
-        x.style.display = "none";
-    }
-    else {
-        x.style.display = "flex";
+    const $nav = $('#links')[0];
+    
+    if($($nav).is(':visible')) {
+        $nav.style.display = 'none';
+    } else {
+        $nav.style.display = 'flex';
     }
 }
 
