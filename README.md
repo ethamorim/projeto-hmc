@@ -1,5 +1,17 @@
-# PROJETO PWEB ─ PARTE 2
+# PROJETO PWEB ─ PARTE 3
 Trabalho solicitado por **Guibson Santana**, professor de Desenvolvimento WEB do **Instituto Federal de Alagoas (IFAL)** e realizado por **Ytalo dos Santos Amorim**, turma **922A**
+
+## Mudanças feitas desde a Parte 2 do projeto
+Outras funcionalidades foram adicionadas nessa 3° parte do projeto:
+
+- Implementação de JavaScript e JQuery para melhor interatividade na página:
+    - Animação de scroll para que as páginas mudem de sessão mais suavemente
+    - _Collapsible_ na página FAQ, para que as respostas fiquem escondidas até que haja um pedido para que sejam expandidas
+    - Validação do formulário da página Serviços
+    - Pequeno uso de sessão para que informações possam ser passadas de uma página a outra
+
+Além da nova aparência do site, que teve suas cores e imagens mudadas.
+Antigos ```.png``` usados na demonstração dos serviços foram substituidos por imagens ```.svg```, completamente tiradas do site <https://storyset.com/> e devidamente creditadas na página com link no rodapé.
 
 ## Mudanças feitas desde a Parte 1 do projeto
 Algumas mudanças foram feitas além do que foi solicitado pelo professor:
@@ -25,23 +37,12 @@ Os seguintes padrões de tamanhos de dispositivos foram usados como *breakpoints
 - 768px (Tablets);
 - 1024px (Desktops);
 
-OBS: Sinto que para o site ficar esteticamente bonito (nas minhas concepções) precisariam de mais algumas Media Queries. Como por ex.: 1024px é o comprimento "padrão" para Desktops, mas a página principal teve alguns comportamentos indesejados nesse tamanho, só funcionando como esperado acima de 1300px (o comprimento do meu é de 1366px)
-
-## Dificuldades
-Algumas dificuldades puderam ser observadas por mim mesmo ao desenvolvimento do projeto. Não lembrarei de todas, mas tentarei listá-las (todas as dificuldades já foram resolvidas, mas sinto que talvez seja importante anotar):
-
-- O uso de Grid CSS (foi complicado entender no início)
-- Estilização do background com a imagem na página principal de forma que ficasse responsiva (resolvido com Media Queries)
-- Responsividade de vídeos (tive a ajuda da monitora Nicole nesse tópico, que juntou material para me ajudar a tornar os vídeos responsivos. O problema é que não é tão fácil manter a altura do vídeo proporcional ao comprimento, e as soluções na internet não resolviam muito bem como eu queria)
-- A estilização dos input[type=ratio] para se parecerem com botões (resolvido com facilidade)
-- Qualquer coisa que precisasse de JS (minha solução foi desistir e procurar outro método que não utilizasse do JS)
-
 ## Testes
 Testados nos browsers:
 
-- Google Chrome
-- Mozilla Firefox
-- Opera
+- Google Chrome 100.0
+- Mozilla Firefox 99.0
+- Opera 85.0
 
 <br><br>
 
