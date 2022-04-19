@@ -80,18 +80,36 @@
 }
 
 .second-services-container {
-    margin-top: 15px;
+    max-width: 1200px;
+    margin: 15px auto;
 }
 
-
-.forms legend {
+#forms-legend {
     font-size: 1.5em;
+}
+
+#campo-nao-preenchido {
+    margin: 10px;
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.397);
+    color: darkred;
+
+    display: none;
+    align-items: center;
+}
+
+#campo-nao-preenchido i {
+    margin: 10px;
 }
 
 .forms label {
     display: block;
     font-size: 1.2em;
     margin: 20px 0 10px;
+}
+
+.required {
+    color: red;
 }
 
 .checkboxes {

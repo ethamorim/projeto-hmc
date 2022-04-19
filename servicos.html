@@ -91,29 +91,34 @@
 
                 <div class="second-services-container">
                     <fieldset class="forms">
-                        <legend>Preencha os campos abaixo</legend>
+                        <legend id="forms-legend">Preencha os campos abaixo</legend>
 
-                        <label for="name">Nome ou apelido:</label>
-                        <input id="name" type="text" name="services" placeholder="Seu nome ou apelido..." required>
+                        <div id="campo-nao-preenchido">
+                            <i class="material-icons-round">error_outline</i>
+                            <p>Campos obrigatórios não foram preenchidos!</p>
+                        </div>
 
-                        <label for="pronomes">Pronomes:</label>
-                        <input id="pronomes" type="text" name="services" placeholder="ele/dele (ou) o/ele/-o" required>
+                        <label for="name">Nome ou apelido: <span class="required">*</span></label>
+                        <input id="name" type="text" name="services" placeholder="Seu nome ou apelido...">
+
+                        <label for="pronomes">Pronomes: <span class="required">*</span></label>
+                        <input id="pronomes" type="text" name="services" placeholder="ele/dele (ou) o/ele/-o">
 
                         <label for="cel-number">Número para Whatsapp:</label>
-                        <input id="cel-number" type="text" name="services" placeholder="(__) ____-____" required>
+                        <input id="cel-number" type="text" name="services" placeholder="(__) ____-____">
 
-                        <label for="user-twitter">User no Twitter:</label>
-                        <input id="user-twitter" type="text" name="services" placeholder="@projetoHMC" required>
+                        <label for="user-twitter">User no Twitter: <span class="required">*</span></label>
+                        <input id="user-twitter" type="text" name="services" placeholder="@projetoHMC">
 
                         <label for="ideas">Nos conte suas ideias iniciais:</label>
-                        <textarea id="ideas" name="services" rows="5" cols="30" placeholder="Para termos uma ideia do seu projeto..." required></textarea>
+                        <textarea id="ideas" name="services" rows="5" cols="30" placeholder="Para termos uma ideia do seu projeto..."></textarea>
 
                         <fieldset class="checkboxes">
                             <label><input id="enter-whatsapp-group" type="checkbox" name="services" value="enter-whatsapp-group">Gostaria de entrar no grupo do Whatsapp de escritores</label>
                             <label><input id="dm-freely" type="checkbox" name="services" value="dm-freely" checked>Concorda em receber mensagens privadas livremente nas redes sociais inseridas acima</label>
                         </fieldset>
 
-                        <input class="button service-button" type="submit" name="services" value="Enviar">
+                        <input id="enviar" class="button service-button" type="submit" name="services" value="Enviar">
                     </fieldset>
                 </div>
             </form>
